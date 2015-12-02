@@ -1,0 +1,19 @@
+@(title: String)(stylesheets: Html)(body: Html)
+
+<!DOCTYPE html>
+<!--[if IE 6 ]><html lang="ja" class="ie ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="ja" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="ja" class="ie ie8"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ja"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <title>@title | SampleApp</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+        @stylesheets
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    </head>
+
+    @body
+
+</html>

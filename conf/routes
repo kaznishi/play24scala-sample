@@ -4,6 +4,10 @@
 
 # Home page
 GET     /                           controllers.Application.index
+GET     /sample                           controllers.SampleController.index
+GET     /sample/hoge                           controllers.SampleController.hoge
+GET     /sample/test                           controllers.SampleController.test
+GET     /signin                           controllers.DefaultController.signin
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

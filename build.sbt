@@ -10,6 +10,10 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
+  "com.typesafe.play" %% "play-slick" % "1.1.1",
+//  "com.typesafe.play" %% "play-slick-evolutions" % "1.1.1",
+  "com.h2database" % "h2" % "1.4.190",
+  "mysql" % "mysql-connector-java" % "5.1.36",
   specs2 % Test
 )
 
