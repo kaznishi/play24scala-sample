@@ -6,6 +6,7 @@
 GET     /                           controllers.Application.index
 GET     /sample                           controllers.SampleController.index
 GET     /sample/hoge                           controllers.SampleController.hoge
+GET     /sample/list                           controllers.SampleController.list
 GET     /sample/test                           controllers.SampleController.test
 GET     /signin                           controllers.DefaultController.signin
 

@@ -9,6 +9,10 @@ class SampleController extends Controller {
     Ok(views.html.Sample.index("index page."))
   }
 
+  def list = Action {
+    Ok(views.html.Sample.list("list page."))
+  }
+
   def hoge = Action {
     Ok(views.html.Sample.hoge("hoge title!!!"))
   }
