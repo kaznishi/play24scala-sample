@@ -3,6 +3,8 @@ package controllers
 import play.api._
 import play.api.mvc._
 
+import models._
+
 class SampleController extends Controller {
 
   def index = Action {
@@ -10,7 +12,10 @@ class SampleController extends Controller {
   }
 
   def list = Action {
-    Ok(views.html.Sample.list("list page."))
+    val lists = List(Task(1,"hogehoge"),Task(11,"hogehoge11"),Task(21,"hogehoge21"))
+
+
+    Ok(views.html.Sample.list("list page.", lists))
   }
 
   def hoge = Action {
@@ -22,3 +27,4 @@ class SampleController extends Controller {
   }
 
 }
+

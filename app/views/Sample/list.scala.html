@@ -1,4 +1,4 @@
-@(message: String)
+@(message: String, lists: List[Task])
 
 @layout.default("list page") {
 
@@ -15,12 +15,14 @@
         </tr>
     </thead>
     <tbody>
+        @for(t <- lists) {
         <tr>
-            <th scope="row">1</th>
-            <td>row1 c1</td>
+            <th scope="row">@t.id</th>
+            <td>@t.name</td>
             <td>row1 c2</td>
             <td>row1 c3</td>
         </tr>
+        }
     </tbody>
 </table>
 </div>
