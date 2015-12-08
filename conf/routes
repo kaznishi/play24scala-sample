@@ -6,7 +6,12 @@
 GET     /                           controllers.Application.index
 GET     /sample                           controllers.SampleController.index
 GET     /sample/hoge                           controllers.SampleController.hoge
+GET     /sample/echo                           controllers.SampleController.echo
+GET     /sample/todo                           controllers.SampleController.todo
+GET     /sample/add                           controllers.SampleController.add
+POST     /sample/add                           controllers.SampleController.add
 GET     /sample/list                           controllers.SampleController.list
+GET     /sample/list-dummy                           controllers.SampleController.listDummy
 GET     /sample/test                           controllers.SampleController.test
 GET     /signin                           controllers.DefaultController.signin
 
