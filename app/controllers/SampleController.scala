@@ -28,3 +28,6 @@ class SampleController extends Controller {
 
 }
 
+case class Task(id: Int, name: String) {
+
+}
